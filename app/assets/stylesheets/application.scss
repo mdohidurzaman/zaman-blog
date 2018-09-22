@@ -1,0 +1,115 @@
+
+@import "bootstrap";
+.form-inline{
+    ml:-10%;
+}
+.navbar-style{
+    background-color:#419FF2!important;
+}
+.navbar-style .navbar-brand {
+    color:#A04819!important;
+    font-size:25px;
+    letter-spacing:-1px;
+    text-transform:uppercase;
+    font-weight:700;
+}
+.navbar-style .nav-link{
+    color:#fff!important;
+}
+.navbar-style .dropdown-menu{
+    background-color:#000;
+    color:#fff!important;
+}
+.navbar-style .dropdown-item{
+    background-color:#000!important;
+    color:#fff!important;
+}
+.navbar-style .form-control{
+    background-color:#419FF2;
+    border:1px solid #fff;
+    color:#333!important;
+}
+.navbar-style .btn-outline-success{
+    border:1px solid #fff;
+    color:#fff!important;
+}
+.center{
+    text-align:center;
+    margin-top:1%;
+    letter-spacing:-2px;
+    color:#A04819;
+    padding-top:15%;
+    font-weight:700;
+}
+
+.jumbotron{
+    background-image: asset-url('zaman.jpg');
+    background-size:cover;
+    height:500px;
+}
+
+.align-center{
+    text-align:left;
+    padding: 20px 0px;
+    color:#FF7B00;
+}
+.heading{
+    color:#333;
+    font-weight:700;
+ }
+ .card-error-title{
+     color:#D60906;
+ }
+ .card-title{
+     color:#333;
+ }
+ .margin-top{
+     margin-top:30px;
+     
+ }
+ .margin-bottom{
+    margin-bottom:50px; 
+ }
+ .card-text{
+     text-align:justify;
+ }
+ .card{
+     margin:10px;
+ }
+
+ .content-title {
+    font-size:25px;
+    font-weight:500;
+    padding-top:10px;
+    color:#419FF2;
+}
+ .content-title:hover {
+    text-decoration:none;
+    color:#FF7B00;
+}
+.footer_height{
+    height:70px;
+    background-color:#eeeeee;
+}
+.footer_nav ul{}
+.footer_nav ul li{
+    list-style:none;
+    float:left;
+    margin-bottom:15px;
+}
+.footer_nav ul li .link{
+    color:#FF7B00;
+    padding-left:20px;
+    text-decoration:none;
+    
+}
+.copyright{
+    color:#FF7B00;
+}
+.copyright a{
+    color:#FF7B00;
+    text-decoration:none;
+}
+.back_button{
+    margin-bottom:50px;
+}
