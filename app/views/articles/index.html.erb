@@ -14,7 +14,7 @@
                     <%= link_to article.title, article_path(article), class: "content-title" %></h4>
                 </div>
                 <p class="card-text">
-                    <%= truncate(article.description, length: 100) %>
+                    <%= truncate(article.description, length: 200) %>
                 </p>
             <div class="card-link">
                 <%= link_to 'Edit this article', edit_article_path(article), class: "btn btn-primary btn-sm" %>

@@ -3,6 +3,9 @@
 .form-inline{
     ml:-10%;
 }
+body{
+    overflow-x: hidden;
+}
 .navbar-style{
     background-color:#419FF2!important;
 }
@@ -91,11 +94,12 @@
     height:70px;
     background-color:#eeeeee;
 }
-.footer_nav ul{}
+
 .footer_nav ul li{
     list-style:none;
     float:left;
     margin-bottom:15px;
+  
 }
 .footer_nav ul li .link{
     color:#FF7B00;
