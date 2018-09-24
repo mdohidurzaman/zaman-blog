@@ -16,6 +16,13 @@
                 <p class="card-text">
                     <%= truncate(article.description, length: 200) %>
                 </p>
+                <div class="card-text">
+                <small id="meta-data">
+                   Created by: <%= article.user.username if article.user %>,
+                   <%= time_ago_in_words(article.created_at) %> ago,
+                   last updated: <%= time_ago_in_words(article.updated_at) %> ago.
+                 </small>   
+                </div>
             <div class="card-link">
                 <%= link_to 'Edit this article', edit_article_path(article), class: "btn btn-primary btn-sm" %>
                 <%= link_to 'Delete this article', article_path(article), method: :delete, data: 
