@@ -1,9 +1,19 @@
-<h1 class="text-center align-center">Welcome to <%= @user.username %>'s page</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="text-center align-center">Welcome to <%= @user.username %>'s page</h1>
+        </div>
+    </div>
 
 <div class="row">
     <div class="col-md-4 offset-md-4">
         <%= gravatar_for @user, size: 150 %>
     </div>
 </div>
-<h4 class="text-center content-title"><%= @user.username %>'s article</h4>
+<div class="row">
+    <div class="col-md-12">
+        <h2 class="text-center content-title"><%= @user.username %>'s article</h2>
+    </div>
+</div>
 <%= render 'articles/article', obj: @user.articles %>
+</div>

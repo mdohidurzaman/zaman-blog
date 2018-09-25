@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <h1 class="text-center align-center">All zaman blogger</h1>
+        </div>
+    </div>
+    <% @users.each do |user| %>
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+  
+            <div class="card">
+             <div class="card-body">
+            <div class="card-img">
+                <%= link_to gravatar_for(user, size: 150), user_path(user), class: "card-img" %>
+           </div>
+                <h2 class="card-title text-center"><%= link_to user.username, user_path(user), class: "content-title" %></h2>
+                    <p class="card-text text-center"><%= pluralize(user.articles.count, "article") if user.articles %></p>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <% end %>
+</div>

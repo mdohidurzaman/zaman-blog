@@ -4,10 +4,29 @@
        <h1 class="align-center">Title: <%= @article.title %></h1>
    </div>
 </div
+
 <div class="row">
 <div class="col-md-10 offset-md-1">
     <div class="card">
         <div class="card-body">
+        <div class="row">
+        <div class="col-md-6 offset-md-3">
+      <% if @article.user %>
+            <div class="card-missing">
+             <div class="card-body">
+                 <div class="created-by text-center">
+                     <p class="created-by">Created by:</p>
+                 </div>
+            <div class="card-img">
+                <%= link_to gravatar_for(@article.user, size: 100), user_path(@article.user), class: "card-img" %>
+           </div>
+                <h2 class="card-title text-center"><%= link_to @article.user.username, user_path(@article.user), class: "content-title" %></h2>
+                    <p class="card-text text-center"><%= pluralize(@article.user.articles.count, "article") if @article.user.articles %></p>
+            </div>
+            </div>
+       <% end %>
+        </div>
+    </div>
             <strong class="card-title">Description</strong>
             <p class="card-text">
                 <%= simple_format(@article.description) %>
