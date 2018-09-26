@@ -4,6 +4,11 @@
             <h1 class="text-center align-center">All zaman blogger</h1>
         </div>
     </div>
+        <div class="row">
+    <div class="col-md-4 offset-md-8">
+         <%= will_paginate %>
+     </div>
+   </div>
     <% @users.each do |user| %>
     <div class="row">
         <div class="col-md-6 offset-md-3">
@@ -19,5 +24,10 @@
             </div>
         </div>
     </div>
+        <div class="row">
+    <div class="col-md-4 offset-md-8">
+         <%= will_paginate %>
+     </div>
+   </div>
     <% end %>
 </div>

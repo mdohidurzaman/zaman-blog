@@ -15,5 +15,19 @@
         <h2 class="text-center content-title"><%= @user.username %>'s article</h2>
     </div>
 </div>
-<%= render 'articles/article', obj: @user.articles %>
+<div class="row">
+    <div class="col-md-3 offset-md-9">
+        <div class="paginate">
+            <%= will_paginate @user_articles %>
+        </div>
+    </div>
+</div>
+<%= render 'articles/article', obj: @user_articles %>
+<div class="row">
+    <div class="col-md-3 offset-md-9">
+        <div class="paginate">
+            <%= will_paginate @user_articles %>
+        </div>
+    </div>
+</div>
 </div>
