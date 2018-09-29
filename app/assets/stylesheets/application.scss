@@ -108,6 +108,7 @@ body{
 .footer_height{
     height:70px;
     background-color:#eeeeee;
+    overflow:hidden;
 }
 
 .footer_nav ul li{
@@ -118,7 +119,7 @@ body{
 }
 .footer_nav ul li .link{
     color:#FF7B00;
-    padding-left:20px;
+    padding-left: 20px;
     text-decoration:none;
     
 }
