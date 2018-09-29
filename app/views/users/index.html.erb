@@ -19,8 +19,14 @@
                 <%= link_to gravatar_for(user, size: 150), user_path(user), class: "card-img" %>
            </div>
                 <h2 class="card-title text-center"><%= link_to user.username, user_path(user), class: "content-title" %></h2>
-                    <p class="card-text text-center"><%= pluralize(user.articles.count, "article") if user.articles %></p>
-                  </div>
+                <p class="card-text text-center"><%= pluralize(user.articles.count, "article") if user.articles %></p>
+                 <% if logged_in? and current_user.admin? %>
+                  <p class="admin_delete text-center">
+                  <%= link_to 'Delete this user', user_path(user), method: :delete, 
+                  data: { confirm: 'Are you sure you want to delete the user and all their articles?'} %>
+                  </p>
+                  <% end %>
+              </div>
             </div>
         </div>
     </div>
