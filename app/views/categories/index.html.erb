@@ -1,0 +1,30 @@
+<div class="container">
+ <div class="row">
+  <div class="col-md-8 offset-md-2">
+   <h1 class="align-center text-center">All listing categories</h1>
+  </div>
+ </div>
+    <div class="row">
+    <div class="col-md-4 offset-md-8">
+         <%= will_paginate %>
+     </div>
+   </div>
+ <% @categories.each do |category| %>
+ <div class="row">
+     <div class="col-md-6 offset-md-3">
+     <div class="card">
+         <div class="card-body">
+             <h3 class="catd-text">
+                 <%= link_to "#{category.name}", category_path(category) %>
+             </h3>
+         </div>
+     </div>
+     </div>
+ </div>
+ <% end %>
+    <div class="row">
+    <div class="col-md-4 offset-md-8">
+         <%= will_paginate %>
+     </div>
+   </div>
+</div>

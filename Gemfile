@@ -14,6 +14,7 @@ gem 'jquery-rails'
 gem 'bcrypt', '~> 3.1', '>= 3.1.12'
 gem 'will_paginate', '~> 3.1', '>= 3.1.6'
 gem 'will_paginate-bootstrap4'
+gem 'rails-controller-testing'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets

@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 root 'pages#home'
 
 resources :articles
+resources :categories, except: [:destroy]
 
 get 'signup', to: 'users#new'
 resources :users, except: [:new]
