@@ -31,6 +31,9 @@
             <p class="card-text">
                 <%= simple_format(@article.description) %>
             </p>
+            <% if @article.categories.any? %>
+              <P><strong>Categories: <%= render @article.categories %></strong></P>
+            <% end %>
             <div class="card-link">
                 <% if logged_in? && (current_user == @article.user || current_user.admin?) %>
                 <%= link_to 'Edit this article', edit_article_path(@article), class: "btn btn-primary btn-sm" %>

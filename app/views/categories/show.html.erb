@@ -1,0 +1,19 @@
+ <div class="container margin-bottom">
+  <div class="row">
+    <div class="col-md-10 offset-md-1">
+         <h1 class="align-center"><%= "Category: " + @category.name %></h1>
+     </div>
+    </div>  
+  <div class="row pagination">
+    <div class="col-md-4 offset-md-8">
+         <%= will_paginate @category_articles %>
+     </div>
+   </div>
+   
+   <%= render 'articles/article', obj: @category_articles %>
+    <div class="row">
+    <div class="col-md-4 offset-md-8">
+         <%= will_paginate @category_articles %>
+     </div>
+   </div>
+</div>

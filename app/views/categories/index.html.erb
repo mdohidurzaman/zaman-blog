@@ -17,6 +17,7 @@
              <h3 class="catd-text">
                  <%= link_to "#{category.name}", category_path(category) %>
              </h3>
+             <p><small><%= pluralize(category.articles.count, "article") %></small></p>
          </div>
      </div>
      </div>

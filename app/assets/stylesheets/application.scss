@@ -41,7 +41,13 @@ body{
    padding: 5px 0px;
    display: inline-block;
  }
-
+ .input-checkbox{
+    padding-left:2%;
+}
+.badge-pill a{
+    text-decoration: none;
+    color: #fff;
+}
 .category_item ul li a{
    text-decoration:none;
    color:#fff;
